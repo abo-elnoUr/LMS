@@ -35,6 +35,7 @@
   padding: 10px;
   position: relative;
   height: 100vh;
+  transition: .3s all linear;
 }
 
 .client-content{
@@ -50,7 +51,7 @@
   grid-template-columns: repeat(15, 1fr);
   align-self: center;
   gap: 10px;
-  width: 99vw;
+  /* width: 99vw; */
   overflow-y: scroll;
 }
 
@@ -106,4 +107,21 @@
 
 .payment .payment-body .summary .discount{
   height: fit-content;
+}
+
+@media  screen and (max-width: 1220px) {
+  .category-content{
+    grid-template-columns: repeat(10, 1fr);
+  }
+}
+
+@media  screen and (max-width: 992px) {
+  .category-content{
+    grid-template-columns: repeat(7, 1fr);
+  }
+}
+@media  screen and (max-width: 762px) {
+  .category-content{
+    grid-template-columns: repeat(4, 1fr);
+  }
 }
