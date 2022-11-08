@@ -51,10 +51,17 @@
   grid-template-columns: repeat(15, 1fr);
   align-self: center;
   gap: 10px;
-  /* width: 99vw; */
   overflow-y: scroll;
 }
 
+.category-content .category-item{
+  transition: .2s all linear;
+  cursor: pointer;
+}
+
+.category-content .category-item:hover{
+  transform: scale(.95);
+}
 
 
 .product-content{
